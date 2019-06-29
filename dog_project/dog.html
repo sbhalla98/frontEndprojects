@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="dog.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body onload="getPictures()">
+       
+        <div id="header">
+           <p style="position: relative;top:10px;left:3%;"> Cute Dogs</p>
+        </div>
+        <div class="main">
+            <div id="demo"><img id="image" src=""><div id="text">Please wait while the image loads!!</div></div>
+            <button type="submit" id="b" class="btn" onclick="reload(image)">Get Me more Cute Dogs</button>
+        </div>
+   
+    </body>
+    <script src="dog.js"></script>
+</html>
