@@ -8,3 +8,13 @@ body{
     background-color: #eeeeee;
     font-size: 20px;
 }
+.loader{
+    position : absolute;
+    top:60%;
+    left:35%;
+    font-weight: bold;
+    font-size : 20px;
+}
+::-webkit-input-placeholder{
+    text-align : center;
+}

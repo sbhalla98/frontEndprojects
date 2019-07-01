@@ -2,18 +2,22 @@
     <head>
         <link rel="stylesheet" href="nasa.css" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+     
     </head>
 
-    <body onload="">
+    <body  background="">
        
         <div id="header">
-           <p style="position: relative;top:10px;left:3%;"> NASA API</p>
+           <div id="h1"><p style="position: relative;top:10px;left:3%;"> NASA API</p></div>
         </div>
         <div class="main">
-            
+            <input type="text" id="text" placeholder=" SEARCH HERE...">
+            <div class="loader">Please Wait While the backGround Image Downloads</div>
+            <img src="" id="images">
         </div>
    
     </body>
-    <script src="nasa.js"></script>
-   <script> src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"</script>
+    <script src="nasa.js" type="text/javascript"></script>
+   
 </html>
