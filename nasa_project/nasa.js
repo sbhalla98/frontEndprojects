@@ -25,11 +25,9 @@ xhr.onreadystatechange = function(){
 }
 
 $("input").on("keyup",function(){
-    console.log("done");
         if(event.keyCode == 13){
             var xhr = new XMLHttpRequest();
             var y = document.getElementById("text").value;
-            console.log(y);
             xhr.open('GET','https://images-api.nasa.gov/search?q='+y);
             xhr.send();
             xhr.onreadystatechange = function(){
@@ -41,7 +39,6 @@ $("input").on("keyup",function(){
                     images.forEach(function(value,index){
                                 var links = value.links;
                                 links.forEach(function(value,index){
-                                    console.log(value.href);
                                     document.getElementById("images").innerHTML += '<img class="img.thumbnail i rounded" src='+ value.href +'></img>';
                                 });
                     });

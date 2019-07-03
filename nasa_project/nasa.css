@@ -9,9 +9,9 @@ body{
     font-size: 20px;
 }
 .loader{
-    position : absolute;
-    top:60%;
-    left:35%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
     font-weight: bold;
     font-size : 20px;
 }
