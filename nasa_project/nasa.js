@@ -35,11 +35,14 @@ $("input").on("keyup",function(){
                     var x = JSON.parse(this.responseText);
                   
                     var images = x.collection.items;
-
+                    var i =0;
                     images.forEach(function(value,index){
                                 var links = value.links;
                                 links.forEach(function(value,index){
-                                    document.getElementById("images").innerHTML += '<img class="img.thumbnail i rounded" src='+ value.href +'></img>';
+                                    
+                                    document.getElementById("images").innerHTML += '<img class="img.thumbnail i rounded" src='+ value.href +'+></img>';
+                                    
+                                   
                                 });
                     });
                         
