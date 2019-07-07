@@ -39,9 +39,8 @@ $("input").on("keyup",function(){
                     images.forEach(function(value,index){
                                 var links = value.links;
                                 links.forEach(function(value,index){
-                                    
-                                    document.getElementById("images").innerHTML += '<img class="img.thumbnail i rounded" src='+ value.href +'+></img>';
-                                    
+                                    console.log(value.href);
+                                    document.getElementById("images").innerHTML += '<img class="img.thumbnail i rounded" src='+ value.href +'>';
                                    
                                 });
                     });
